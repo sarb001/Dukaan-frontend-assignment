@@ -90,7 +90,7 @@ const Sidebar = () => {
         </div>
 
         {/* bottom navbar */}
-        <div className='flex px-4 py-1  gap-2.5 flex-row items-center bg-[#353C53]'>
+        <div className='flex px-4 py-1 rounded  gap-2.5 flex-row items-center bg-[#353C53]'>
            <div> <img src = "/wallet.svg"  /> </div>
            <div className='flex flex-col'>
               <div> Available credits </div>
