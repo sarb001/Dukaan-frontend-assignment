@@ -6,7 +6,7 @@ import { HiMagnifyingGlass } from "react-icons/hi2";
 
 const Navbar = () => {
   return (
-    <div className='flex flex-row justify-between border-b  sticky top-0 z-100   py-3 px-8 gap-4 bg-[#FFFFFF] '>
+    <div className='flex flex-row justify-between border-b  sticky top-0 z-20  py-3 px-8 gap-4 bg-[#FFFFFF] '>
       
         <div className='flex justify-between gap-1.5 items-center'>
             <div> Payments </div>
