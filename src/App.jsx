@@ -2,7 +2,7 @@
 import './App.css'
 import Navbar from './Navbar'
 import Second from './Second'
-import { Analytics, Appearance, Audience, Delivery, Discounts, Downarrow, Home, Marketing, Orders, Payouts, Plugins, Products  } from '../public/assests/icons'
+import { Analytics, Appearance, Audience, Delivery, Discounts, Downarrow, Home, MagnifyingGlass, Marketing, Orders, Payouts, Plugins, Products  } from '../public/assests/icons'
 
 function App() {
 
@@ -21,55 +21,77 @@ function App() {
 
 ]
 
+  //  const [menubutton,setmenubutton] = useState(false);
+
+
   return (
-   <div className='flex flex-row  w-full '> 
-    <div className='w-[0%]  md:min-w-52  md:p-4 bg-[#1E2640] h-[100vh]  text-white sticky left-0 top-0'>  
+   <div className='flex flex-row  w-full'> 
 
-          <div className='md:grid md:grid-cols-3 md:gap-3 md:py-[2px] md:px-[1px]'>
-              <div>
-                 <img src = "/public/nishyan.svg"  alt = "nishyam" />
-              </div>
+              {/*  whole side-bar  */}
+               
+    <div className='hidden  tablet:block tablet:min-w-56  tablet:p-4 bg-[#1E2640] h-[100vh]  text-white '>  
 
-              <div>
-                 <span> Nishyan </span>
-                 <span className='text-xs'> Visit store </span>
-              </div>
+            <div className='tablet:flex tablet:gap-3 tablet:py-[2px] tablet:px-[1px]'>
 
-              <div className='md:flex md:justify-center md:items-center'>
-                 <span className = 'text-white'> <Downarrow />  </span>
-              </div>
-          </div>
+                <div>
+                  <img src = "/public/nishyan.svg"  alt = "nishyam" />
+                </div>
 
-            <div className='md:mt-4'>
+                <div className='tablet:flex  tablet:flex-col tablet:grow'>
+               
+                    <span> Nishyan </span>
+                    <span className='text-xs'> Visit store </span>
+                  
+                </div>
+
+                <div className='tablet:flex tablet:justify-center tablet:items-center'>
+                    <span className = 'text-white'> <Downarrow />  </span>
+                </div>
+
+            </div>
+
+            <div className='tablet:mt-4'>
                {links?.map((i) => {
                  return (
-                  <div className='md:flex md:flex-row md:px-4 md:py-2'>
+                  <div className='tablet:flex tablet:flex-row tablet:px-4 tablet:py-2'>
                       {i?.icon}    
-                     <span className='md:px-4'> {i?.label} </span>
+                     <span className='tablet:px-4'> {i?.label} </span>
                   </div>
                   )}
                 )}
             </div>
 
     </div>
-    <div className = 'w-full  md:grow  bg-[#FAFAFA]'>
-          <div className='p-2 grid grid-cols-2 justify-between bg-[#ffff] border-b-[1px] border-[#d9d9d9] rounded-xlW '>
 
-            <div className='flex items-center gap-2 '>
 
-                <div>
+    <div className = 'w-full tablet:grow  bg-[#FAFAFA]'>
+          <div className='p-2 grid grid-cols-2 justify-between bg-[#ffff] border-b-[1px] border-[#d9d9d9] rounded-xl '>
+
+            <div className='flex items-center gap-5 '>
+
+                  {/* button hamburger */}
+                <div className=''>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
                     </svg>
                 </div>
 
                 <div className='text-xl font-semibold '> Payouts  </div> 
+
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
                     </svg>
                 </div>
+
                 <div className='text-xs'> How it works  </div> 
+
+                {/*  input search bar */}
+                <div className='tablet:flex hidden  tablet:p-2 tablet:bg-slate-200 tablet:rounded-tablet tablet:grow '>
+                  <span> <MagnifyingGlass />  </span>
+                  <input  type = "text" placeholder='Search Features' className='tablet:bg-slate-200' />
+                </div>
+
             </div>
 
             <div className='flex justify-end gap-2'>
@@ -99,6 +121,8 @@ function App() {
       </div>
            <Second />
     </div> 
+
+
    </div>
   )
 }
