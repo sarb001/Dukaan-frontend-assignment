@@ -23,7 +23,7 @@ function App() {
 
   return (
    <div className='flex flex-row  w-full '> 
-    <div className='w-[0%] md:w-[22%] md:p-4 bg-[#1E2640] h-[100vh]  text-white sticky left-0 top-0'>  
+    <div className='w-[0%]  md:min-w-52  md:p-4 bg-[#1E2640] h-[100vh]  text-white sticky left-0 top-0'>  
 
           <div className='md:grid md:grid-cols-3 md:gap-3 md:py-[2px] md:px-[1px]'>
               <div>
@@ -52,7 +52,7 @@ function App() {
             </div>
 
     </div>
-    <div className='w-full  md:w-[78%] bg-[#FAFAFA]'>
+    <div className = 'w-full  md:grow  bg-[#FAFAFA]'>
           <div className='p-2 grid grid-cols-2 justify-between bg-[#ffff] border-b-[1px] border-[#d9d9d9] rounded-xlW '>
 
             <div className='flex items-center gap-2 '>
@@ -98,7 +98,7 @@ function App() {
 
       </div>
            <Second />
-    </div>
+    </div> 
    </div>
   )
 }
