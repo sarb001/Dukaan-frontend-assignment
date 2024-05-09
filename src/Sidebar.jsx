@@ -1,5 +1,5 @@
 import React from 'react'
-import { Analytics, Appearance, Audience, CancelButton, Delivery, Discounts, Downarrow, Home, Marketing, Orders, Payouts, Plugins, Products } from '../public/assests/icons'
+import { Analytics, Appearance, Audience, CancelButton, Delivery, Discounts, Downarrow, Home, Marketing, Nishyamimg, Orders, Payouts, Plugins, Products } from '../public/assests/icons'
 
 const Sidebar = ({setmenubutton,menubutton}) => {
 
@@ -29,7 +29,7 @@ const Sidebar = ({setmenubutton,menubutton}) => {
                  tablet:flex tablet:gap-3 tablet:py-[2px] tablet:px-[1px]'>
 
                      <div>
-                       <img src = "/public/nishyan.svg"  alt = "nishyam" />
+                       <img src = '/public/nishyan.svg'   alt = "nishyam" />
                      </div>
 
                      <div className='grid tablet:flex  tablet:flex-col tablet:grow'>
@@ -49,7 +49,7 @@ const Sidebar = ({setmenubutton,menubutton}) => {
                  <div className='mt-12 tablet:mt-4'>
                     {links?.map((i) => {
                       return (
-                       <div className='flex flex-row px-4 py-2'>
+                       <div className='flex flex-row px-4 py-2 nav_link '>
                            {i?.icon}    
                           <span className='tablet:px-4'> {i?.label} </span>
                        </div>
