@@ -1,5 +1,5 @@
 import React from 'react'
-import { Analytics, Appearance, Audience, CancelButton, Delivery, Discounts, Downarrow, Home, Marketing, Nishyamimg, Orders, Payouts, Plugins, Products } from '../public/assests/icons'
+import { Analytics, Appearance, Audience, CancelButton, Delivery, Discounts, Downarrow, Home, Marketing, Nishyamimg, Orders, Payouts, Plugins, Products, Wallet } from '../public/assests/icons'
 
 const Sidebar = ({setmenubutton,menubutton}) => {
 
@@ -21,8 +21,10 @@ const Sidebar = ({setmenubutton,menubutton}) => {
   return (
     <>
          <div className =  {` ${menubutton ? "block" : "hidden"} min-w-48 
-          z-30 fixed p-4
-          tablet:block tablet:min-w-56  tablet:p-4 bg-[#1E2640] h-[100vh]  text-white `}>  
+          z-30 fixed p-4 
+          tablet:block tablet:min-w-56  tablet:p-4 bg-[#1E2640] h-[100vh]  text-white flex flex-col gap-2.5 `}>  
+
+            <div>
 
                  <div className='
                  grid grid-cols-3 gap-3 
@@ -56,6 +58,18 @@ const Sidebar = ({setmenubutton,menubutton}) => {
                        )}
                      )}
                  </div>
+
+            </div>
+
+            <div className='flex items-center gap-2.5 w-48  bg-[#353c53] px-3 py-1.5 
+                  rounded-md
+                  '>
+                     <div className='p-1.5 bg-[#ffffff1a]  rounded-lg '> <Wallet /> </div> 
+                     <div>
+                        <div> Available credits </div>
+                        <div> 222.10 </div>
+                     </div>
+            </div>
 
          </div>
 
