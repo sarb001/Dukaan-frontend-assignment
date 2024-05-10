@@ -1,11 +1,12 @@
 import React from 'react'
 import Card from './Card'
 import { ArrowDown } from '../../public/assests/Allicons'
+import PayoutSection from './PayoutSection'
 
 const MainDashboard = () => {
 
   return (
-    <div>
+    <div className='flex flex-col gap-8'>
 
         {/*  Overview  */}
         <div>
@@ -29,7 +30,7 @@ const MainDashboard = () => {
 
         {/* Transactions = */}
         <div>
-
+            <PayoutSection />
         </div>
     </div>
   )
