@@ -16,32 +16,36 @@ const PayoutSection = () => {
          </div>
 
          {/* input and Table Section */}
-         <div className='flex justify-between gap-2 bg-[#fff] rounded-lg p-3 pb-2'>
-            <div className='flex items-center w-full  border border-[#d9d9d9] pl-4'>  
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4" >
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                </svg>
-                <input type = "text" placeholder='Order ID' /> 
-            </div>
+         <div className='flex flex-col justify-between gap-3 bg-[#fff] rounded-lg p-3 pb-2'>
 
             <div className='flex gap-2 '>
-                <div className='flex justify-center items-center gap-[6px] px-3 py-[6px]
-                border border-[#d9d9d9] 
-                '> 
-                    <div> SORT </div>
-                    <DoubleArrow />
+
+                <div className='flex items-center w-full  border border-[#d9d9d9] pl-4'>  
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4" >
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+                    <input type = "text" placeholder='Order ID' /> 
                 </div>
-                <div>
-                    <DownloadIcon />
+
+                <div className='flex gap-2 '>
+                    <div className='flex justify-center items-center gap-[6px] px-3 py-[6px]
+                    border border-[#d9d9d9] 
+                    '> 
+                        <div> SORT </div>
+                        <DoubleArrow />
+                    </div>
+                    <div>
+                        <DownloadIcon />
+                    </div>
                 </div>
+
+            </div>
+
+            <div>
+                <div> <RefundTable /> </div>
             </div>
 
         </div>
-
-        <div>
-            <div> <RefundTable /> </div>
-        </div>
-
     </div>
   )
 }
