@@ -62,6 +62,11 @@ const Header = ({setmenubutton,menubutton}) => {
 
                </div>
     </div>
+
+    {/* Main Dashboard Section */}
+      <div className='px-8'>
+      wdwsrtre
+      </div>
     </>
   )
 }

@@ -21,7 +21,7 @@ const Sidebar = ({setmenubutton,menubutton}) => {
   return (
     <>
          <div className =  {` ${menubutton ? "block" : "hidden"} min-w-48 
-          z-30 fixed p-4 
+          z-30 fixed px-6 py-2
           tablet:block tablet:min-w-56  tablet:p-4 bg-[#1E2640] h-[100vh]  text-white flex flex-col gap-2.5 `}>  
 
             <div>
