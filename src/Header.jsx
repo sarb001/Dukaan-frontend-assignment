@@ -35,7 +35,7 @@ const Header = ({setmenubutton,menubutton}) => {
 
                    </div>
 
-                   {/*  side icons  */}
+                   {/*  side icons  here */}
                    <div className='flex justify-end gap-2'>
 
                        <div className='bg-slate-200 p-2 rounded-full '>
