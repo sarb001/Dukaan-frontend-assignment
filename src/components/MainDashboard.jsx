@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from './Card'
+import { ArrowDown } from '../../public/assests/Allicons'
 
 const MainDashboard = () => {
 
@@ -8,9 +9,12 @@ const MainDashboard = () => {
 
         {/*  Overview  */}
         <div>
-            <div>
+            <div className='flex justify-between mb-6'>
                 <div className='font-medium text-xl'> Overview </div>
-                <div> This Month </div>
+                <div className='flex gap-4 bg-white px-2 py-1'> 
+                    <div> This Month  </div>
+                    <ArrowDown />
+                </div>
             </div>
 
             <div className = 'grid grid-cols-1 gap-5 tablet:grid-cols-2 '>
