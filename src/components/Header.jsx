@@ -39,7 +39,7 @@ const Header = () => {
           </div>
       </div>
 
-      <div className='py-6 px-4'>
+      <div className='py-6 px-4 bg-[#f1f1f1]'>
          <MainDashboard />
       </div>
     
