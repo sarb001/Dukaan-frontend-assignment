@@ -23,7 +23,7 @@ const Sidebar = ({openmenu,setmenuopen}) => {
    
     <div className={`${openmenu ? "block" : "hidden" } tablet:block`}>
 
-      <div className = {` absolute left-0 min-w-48 top-0    text-white bg-[#1e2640] tablet:fixed
+      <div className = {` h-[100vh] absolute left-0 min-w-48 top-0    text-white bg-[#1e2640] tablet:fixed
       gap-6  py-4 px-[10px] `}>
         
           <div className='h-[85vh]'>
@@ -81,7 +81,7 @@ const Sidebar = ({openmenu,setmenuopen}) => {
           </div>
       </div>
 
-      {setmenuopen && (
+      {openmenu && (
         <>
           <div  
           onClick={() => setmenuopen(!openmenu)}

@@ -5,7 +5,7 @@ import MainDashboard from './MainDashboard'
 const Header = ({openmenu,setmenuopen}) => {
   return (
     <>
-      <div className='bg-[#fff] px-4 py-3 border-b-2 border-b-[#d9d9d9] grid grid-cols-2  tablet:grid-cols-3 gap-5 '>
+      <div className='bg-[#fff] w-full  z-0 px-4 py-3 border-b-2 border-b-[#d9d9d9] grid grid-cols-2  tablet:grid-cols-3 gap-5 '>
         
           <div className='flex items-center gap-2'>
 
