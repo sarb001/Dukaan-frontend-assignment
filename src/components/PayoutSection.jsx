@@ -16,7 +16,7 @@ const PayoutSection = () => {
          </div>
 
          {/* input and Table Section */}
-         <div className='flex flex-col justify-between gap-3 bg-[#fff] rounded-lg p-3 pb-2'>
+         <div className='flex flex-col overflow-auto tablet:w-full  justify-between gap-3 bg-[#fff] rounded-lg p-3 pb-2'>
 
             <div className='flex gap-2 '>
 
@@ -41,7 +41,7 @@ const PayoutSection = () => {
 
             </div>
 
-            <div>
+            <div className='overflow-x-auto'>
                 <div> <RefundTable /> </div>
             </div>
 

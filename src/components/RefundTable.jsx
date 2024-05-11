@@ -20,7 +20,13 @@ const RefundTable = () => {
                     return (
                             <tr> 
                                 <td className='px-3 py-[14px] text-[#146eb4] '>  #{i.orderId} </td>
-                                <td className='px-3 py-[14px]'> {i?.status} </td>
+                                <td className='px-3 py-[14px] flex items-center gap-2'> 
+                                  <div data-state = {i.status === 'Successful' ? "Successful" : "Processing" }
+                                  className='data-[state=Successful]:bg-[#17b31b] w-[10px] h-[10px] rounded-full flex  bg-slate-400' > 
+                                  </div>
+                                  
+                                  <span> {i?.status} </span>
+                                </td>
 
                                 <td className='px-3 py-[14px]'> {i?.transactionID} </td>
 
