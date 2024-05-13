@@ -1,3 +1,4 @@
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -5,8 +6,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens : {
+        small : '670px',
+        tablet : '960px',
+        desktop : '1248px'
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+  ],
 }
 
